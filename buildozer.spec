@@ -10,7 +10,8 @@ source.dir = .
 source.include_exts = py,png,jpg,jpeg,kv,atlas,json,ttf
 
 # --- Python / Android dependencies ---
-requirements = python3,kivy==2.3.1,kivy_garden.mapview,pillow,requests,certifi,charset-normalizer,idna,urllib3,openssl,plyer,pyjnius,yt-dlp,mutagen,pycryptodomex,brotli,websockets
+# Cleaned up requirements to remove non-compiling C-extensions
+requirements = python3,kivy==2.3.1,kivy_garden.mapview,pillow,requests,certifi,charset-normalizer,idna,urllib3,openssl,plyer,pyjnius,yt-dlp,mutagen,websockets
 
 orientation = portrait
 fullscreen = 0
@@ -19,7 +20,7 @@ fullscreen = 0
 android.permissions = INTERNET,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION,ACCESS_NETWORK_STATE,POST_NOTIFICATIONS,READ_EXTERNAL_STORAGE,WRITE_EXTERNAL_STORAGE
 
 # --- Target Android SDK / NDK Configuration ---
-android.api = 35
+android.api = 33
 android.minapi = 24
 android.ndk = 25b
 android.archs = arm64-v8a, armeabi-v7a
