@@ -10,8 +10,7 @@ source.dir = .
 source.include_exts = py,png,jpg,jpeg,kv,atlas,json,ttf
 
 # --- Python / Android dependencies ---
-# Cleaned up requirements to remove non-compiling C-extensions
-requirements = python3,kivy==2.3.1,kivy_garden.mapview,pillow,requests,certifi,charset-normalizer,idna,urllib3,openssl,plyer,pyjnius,yt-dlp,mutagen,websockets
+requirements = python3,kivy==2.3.1,kivy_garden.mapview,pillow,requests,certifi,charset-normalizer,idna,urllib3,plyer,pyjnius,yt-dlp,mutagen,websockets
 
 orientation = portrait
 fullscreen = 0
