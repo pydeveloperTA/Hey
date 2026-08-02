@@ -29,7 +29,8 @@ jobs:
 
       - name: Build APK with Buildozer
         run: |
-          yes | buildozer android debug
+          # Added -v flag for verbose logging output
+          yes | buildozer -v android debug
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
